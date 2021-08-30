@@ -20,7 +20,6 @@ function useLocalStorage(itemName, initialValue) {
 
         setItem(parsedItem);
         setLoading(false);
-        console.log("nanan");
       } catch (error) {
         setError(error);
       }
