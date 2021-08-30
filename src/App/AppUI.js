@@ -6,6 +6,7 @@ import { TodoItem } from "../TodoItem";
 import { TodoList } from "../TodoList";
 import { TodoContext } from "../TodoContext";
 import { Modal } from "../Modal";
+import { TodoForm } from "../TodoForm";
 
 function AppUI() {
   const {
@@ -42,7 +43,7 @@ function AppUI() {
 
       {!!openModal && (
         <Modal>
-          <p>Teletransportación</p>
+          <TodoForm />
         </Modal>
       )}
 
