@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 function useLocalStorage(itemName, initialValue) {
   const [error, setError] = React.useState(false);
@@ -23,7 +23,7 @@ function useLocalStorage(itemName, initialValue) {
       } catch (error) {
         setError(error);
       }
-    }, 1000);
+    }, 1000); // eslint-disable-next-line
   }, []);
 
   const saveItem = (newItem) => {
@@ -35,7 +35,6 @@ function useLocalStorage(itemName, initialValue) {
       setError(error);
     }
   };
-
   return { item, saveItem, loading, error };
 }
 
